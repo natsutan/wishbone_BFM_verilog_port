@@ -79,7 +79,7 @@ module mb_master #(parameter write32_time_out = 6, read32_time_out = 6, clk_peri
     input RTY_I,
     
     output reg LOCK_O,
-    output reg SEL_O,
+    output reg [3:0] SEL_O,
     
     output reg [5:0] CYCLE_IS
     );
