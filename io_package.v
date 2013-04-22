@@ -134,7 +134,8 @@ task rd_32;
 	if (bus_read_timer >= read32_time_out)  disable loop_exit;
       end
     end
-    
+
+    #1
     read_data = DAT_I;
     CYCLE_IS  = BUS_IDLE;
     ADR_O     = 0;
