@@ -217,7 +217,7 @@ task rmw_32;
 	if (bus_read_timer >= read32_time_out)  disable loop_exit_r;
       end
     end
-    
+    #1
     read_data = DAT_I;
  
     // now write
